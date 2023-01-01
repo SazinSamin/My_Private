@@ -1,7 +1,7 @@
 // Code your testbench here
 // or browse Examples
 module fa32bit_tb;
-	parameter n = 32;
+	parameter n = 4;
   	wire [n-1:0] s;//output
 	wire cout;//output
 	reg [n-1:0] a,b;
@@ -21,8 +21,8 @@ module fa32bit_tb;
 initial begin
   	$dumpfile("dump.vcd");
   	$dumpvars(1);
-	a = 32'b00000000000000000000000000000000;
-	b = 32'b00000000000000000000000000000000;
+	a = 4'b0000;
+	b = 4'b0000;
   	clk = 0;
 	cin = 0;
 	end

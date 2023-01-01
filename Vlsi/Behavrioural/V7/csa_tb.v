@@ -1,5 +1,6 @@
 // Code your testbench here
 // or browse Examples
+`include "fa32bit_v7.v"
 module fa32bit_tb;
 	parameter n = 32;
   	wire [n-1:0] s;//output
@@ -26,8 +27,8 @@ initial begin
   	clk = 0;
 	cin = 0;
 	end
-	always #35 a = a+1;
-	always #35 b = b+1;
+	always #40 a = a+1;
+	always #40 b = b+1;
   	always #1 clk = ~clk;
 	//always #40 cin = ~cin;
 	initial #1500 $finish;

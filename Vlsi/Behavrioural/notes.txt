@@ -1,0 +1,1 @@
+I have got wrong value because sometimes a assign "s" variable multiple times.

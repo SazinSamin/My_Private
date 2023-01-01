@@ -10,7 +10,7 @@ module fa32bit_tb;
 	
 
 	fa32bit inst(
-      	.s(s),
+      		.s(s),
 		.cout(cout),
 		.cin(cin),
 		.a(a),
@@ -21,14 +21,16 @@ module fa32bit_tb;
 initial begin
   	$dumpfile("dump.vcd");
   	$dumpvars(1);
+  	//a = 8'b00000000;
+  	//b = 8'b00000000;
 	a = 32'b00000000000000000000000000000000;
 	b = 32'b00000000000000000000000000000000;
   	clk = 0;
 	cin = 0;
 	end
-	always #35 a = a+1;
-	always #35 b = b+1;
+	always #20 a = a+10000;
+	always #20 b = b+10000;
   	always #1 clk = ~clk;
 	//always #40 cin = ~cin;
-	initial #1500 $finish;
+	initial #100000 $finish;
 endmodule
