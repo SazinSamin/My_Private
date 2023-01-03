@@ -74,7 +74,7 @@ end
 					
 			
 			f0 = s0;
-			{cout0, f1} <= s1 + c0;			
+			{cout0, s[0]} <= s1 + c0;			
 			{cout1, f2} <= s2 + c1 + cout0;
 			{cout2, f3} <= s3 + c2 + cout1;
 			{cout3, f4} <= s4 + c3 + cout2;

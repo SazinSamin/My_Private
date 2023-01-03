@@ -1,11 +1,9 @@
-// Code your testbench here
-// or browse Examples
 module fa32bit_tb;
 	parameter n = 32;
-  	wire [n-1:0] s;//output
-	wire cout;//output
+  	wire [n-1:0] s;
+	wire cout;
 	reg [n-1:0] a,b;
-	reg cin;//input
+	reg cin;
 	reg clk;
 	
 
